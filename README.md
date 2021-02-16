@@ -15,7 +15,7 @@ The functionality will look something similar to [this](https://url-shortener-mi
 
 | Story                                                         | Completed? |
 | ------------------------------------------------------------- | ---------- |
-| I can access a landing page with a description of the service | **NO**     |
+| I can access a landing page with a description of the service | **YES**     |
 | The service receives a url to shorten                         | **NO**     |
 | The service provides a shortened version of the provided url  | **NO**     |
 
@@ -31,7 +31,9 @@ of mathematical formula to alter that value, then use that same formula to find 
 Here, we can take a value (such as a url to shorten), apply some sort of calculation to it, then return a result which makes sense to our algorithm that allows us to obtain the original
 url when accessed.
 
----
+#### First thing's first
+
+We have a basic form on our HTML landing page. What we need is a way to send/receive what is in the textbox in order to maniuplate it.
 
 ---
 
