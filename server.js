@@ -13,9 +13,15 @@ app.use(cors());
 
 app.use("/public", express.static(`${process.cwd()}/public`));
 
+// functionality
+// either we can create our own in-memory hash table for manipulating keys and retrieving their values
+// OR
+// we can have each submission generate a hash which corresponds to a mongodb _id
+// then when we want to retrieve that link, use the calculated hash value
+
 // Route to capture input from the form
 app.post(
-  "/search",
+  "/api/shorturl/new",
   bodyParser.urlencoded({ extended: false }),
   (req, res, next) => {
     console.log(req.body);
@@ -32,3 +38,5 @@ app.get("/", function(req, res) {
 app.listen(port, function() {
   console.log(`Listening on port ${port}`);
 });
+
+
